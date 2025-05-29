@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Imad Jnah - Portfolio</title>
     <style>
         body {
@@ -10,6 +11,7 @@
             padding: 0;
             background-color: #f5f6fa;
             color: #2f3640;
+            line-height: 1.6;
         }
         header {
             background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80');
@@ -18,22 +20,32 @@
             color: white;
             padding: 80px 20px;
             text-align: center;
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
         }
         header h1 {
             margin: 0;
             font-size: 48px;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: 300;
+            letter-spacing: 1px;
         }
         .container {
             max-width: 900px;
             margin: 40px auto;
-            padding: 20px;
+            padding: 30px 25px;
             background: #fff;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
         }
         h2 {
             color: #273c75;
             margin-top: 30px;
+            border-bottom: 3px solid #0097e6;
+            padding-bottom: 5px;
         }
         ul {
             padding-left: 20px;
@@ -41,15 +53,35 @@
         a {
             color: #0097e6;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         a:hover {
+            color: #0652dd;
             text-decoration: underline;
+        }
+        .btn-cv {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 24px;
+            background-color: #0097e6;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,151,230,0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-cv:hover {
+            background-color: #0652dd;
+            box-shadow: 0 6px 12px rgba(6,82,221,0.5);
         }
         .footer {
             text-align: center;
             padding: 20px;
             background: #dcdde1;
             margin-top: 40px;
+            font-size: 14px;
+            color: #636e72;
         }
     </style>
 </head>
@@ -60,28 +92,33 @@
     </header>
 
     <div class="container">
+        <h2>Objective</h2>
+        <p>Motivated aspiring software engineer seeking opportunities to grow and contribute to impactful projects.</p>
+
         <h2>About Me</h2>
-        <p>I’m passionate about learning programming and technology. I’m building real-world projects to gain experience and become a great software engineer.</p>
+        <p>Passionate about programming and technology, continuously building real-world projects to gain hands-on experience and become a skilled software engineer.</p>
 
         <h2>Skills</h2>
         <ul>
             <li>Python (Beginner)</li>
             <li>HTML & CSS</li>
-            <li>Using AI Tools (ChatGPT, Replit)</li>
+            <li>AI Tools: ChatGPT, Replit</li>
         </ul>
 
         <h2>Projects</h2>
         <ul>
-            <li><strong>Portfolio Website</strong> – This very site you're viewing! Built using HTML & CSS and hosted on GitHub Pages.</li>
-            <li><strong>AI Tool Exploration</strong> – Practicing using ChatGPT and automating tasks using beginner Python scripts.</li>
+            <li><strong><a href="https://imad421.github.io/" target="_blank" rel="noopener">Portfolio Website</a></strong> – Personal website built using HTML & CSS, hosted on GitHub Pages.</li>
+            <li><strong><a href="https://github.com/imad421/ai-tool-exploration" target="_blank" rel="noopener">AI Tool Exploration</a></strong> – Practicing ChatGPT and Python scripting to automate tasks.</li>
         </ul>
 
         <h2>Languages & Tools</h2>
         <p>Python, HTML, CSS, GitHub, ChatGPT, Replit</p>
 
         <h2>Contact</h2>
-        <p>Email: imadjnah55@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/imad421" target="_blank">github.com/imad421</a></p>
+        <p>Email: <a href="mailto:imadjnah55@gmail.com">imadjnah55@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/imad421" target="_blank" rel="noopener">github.com/imad421</a></p>
+
+        <a href="ImadJnah_CV.pdf" class="btn-cv" download>Download My CV (PDF)</a>
     </div>
 
     <div class="footer">
